@@ -17,6 +17,8 @@ export const searchLocations = async (req, res) => {
       {
         headers: {
           "Accept-Language": "en-US,en;q=0.9",
+          "User-Agent":
+            "ELVA Trip Planner (https://elva-trip-planner.onrender.com)",
         },
       },
     );
