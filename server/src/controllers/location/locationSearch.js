@@ -22,8 +22,9 @@ export const searchLocations = async (req, res) => {
     );
 
     if (!response.ok) {
+      const errorDetails = await response.text();
       throw new Error(
-        `Error. Nominatim API responded with status: ${response.status}`,
+        `Error. Nominatim API responded with status: ${response.status}. Response: ${errorDetails.slice(0, 1000)}`,
       );
     }
 
