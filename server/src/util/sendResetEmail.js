@@ -10,7 +10,7 @@ export async function sendResetEmail(email, resetToken) {
   const resetLink = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
 
   const { error } = await resend.emails.send({
-    from: "ELVA <onboarding@resend.dev>",
+    from: "ELVA <noreply@mail.sertanerdogan.me>",
     to: email,
     subject: "Reset your password",
     html: `

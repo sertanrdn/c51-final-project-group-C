@@ -12,7 +12,7 @@ export async function sendVerificationEmail(email, verificationToken) {
 
   // Sending the verification email
   const { error } = await resend.emails.send({
-    from: "ELVA <onboarding@resend.dev>",
+    from: "ELVA <noreply@mail.sertanerdogan.me>",
     to: email,
     subject: "Verify your email address",
     html: `
