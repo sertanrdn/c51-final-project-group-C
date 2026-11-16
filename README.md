@@ -37,7 +37,7 @@ Main features:
 - View Other Travellers’ Profiles
     - See their published trips
 
-[Click here for the Demo version](https://c51c.hyf.dev/)
+[🚀 Live Demo — ELVA Trip Planner](https://elva-trip-planner.onrender.com)
 
 ## 1. Setup
 
@@ -58,38 +58,51 @@ To run the app in dev mode you can run the following command in the main directo
 ## 2. Code structure
 
 ```
-client
-├── public
-└── src
-|   └── __tests__
-|   └── __testUtils__
-|   └── api
-|   └── assets
-|   └── components
-|   └── context
-|   └── hooks
-|   └── pages
-|       └── __tests__
-|       └── components
-|   └── util
-|   index.jsx
-cypress
-|   └── fixtures
-|   └── integration
-|   └── plugins
-|   └── support
-server
-└── src
-    └── __tests__
-    └── __testUtils__
-    └── controllers
-    └── db
-    └── middleware
-    └── models
-    └── routes
-    └── util
-    └── validation
-    index.js
+c51-final-project-group-C/
+├── client/
+│   ├── public/
+│   └── src/
+│       ├── __tests__/
+│       ├── __testUtils__/
+│       ├── api/
+│       ├── assets/
+│       ├── components/
+│       │   └── __tests__/
+│       ├── context/
+│       ├── hooks/
+│       ├── pages/
+│       │   ├── auth/
+│       │   ├── CreateTrip/
+│       │   ├── filters/
+│       │   ├── Home/
+│       │   ├── TripPage/
+│       │   └── User/
+│       ├── styles/
+│       ├── util/
+│       ├── App.jsx
+│       ├── AppWrapper.jsx
+│       └── main.jsx
+│
+├── cypress/
+│   ├── e2e/
+│   ├── fixtures/
+│   ├── plugins/
+│   └── support/
+│
+└── server/
+    └── src/
+        ├── __tests__/
+        ├── __testUtils__/
+        ├── controllers/
+        ├── db/
+        ├── middleware/
+        ├── models/
+        ├── routes/
+        ├── util/
+        ├── validation/
+        ├── app.js
+        ├── seedCountries.js
+        └── testRouter.js
 ```
 
 ### 2.1 Client structure
@@ -140,7 +153,7 @@ The base stack of the app is a MERN stack (Mongoose, Express, React, Node). Next
 - `prettier` || To automatically format our code. See [docs](https://prettier.io/)
 - `concurrently` || To run commands in parallel. See [docs](https://github.com/open-cli-tools/concurrently#readme)
 
-For more information on how these work together including the automatic deployment to heroku, have a look at our detailed [DEV](./DEV.md) file.
+For more information about the project setup, development workflow, and deployment configuration, see our detailed [DEV](./DEV.md) guide.
 
 ### 3.2 Client-side libraries
 
